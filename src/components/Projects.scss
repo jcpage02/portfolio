@@ -7,6 +7,7 @@
   box-sizing: border-box;
   height: 150%;
   width: 7em;
+  margin-right: 1.2em;
   transform: rotate(20deg);
   background-color: $colorThree;
   transition: all 1s;
@@ -34,5 +35,6 @@
   transform: rotate(-90deg);
   font-size: 2em;
   margin-left: -1em;
+  margin-bottom: 0;
   margin-top: -0;
 }
