@@ -1,0 +1,38 @@
+@import "../Style.scss";
+
+.contact {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  height: 150%;
+  width: 7em;
+  transform: rotate(20deg);
+  background-color: $colorTwo;
+  transition: all 1s;
+}
+.contact:hover {
+  box-shadow: 0px 0px 60px rgb(39, 39, 39);
+}
+.contact-slide {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  height: 150%;
+  width: 40em;
+  transform: rotate(20deg);
+  background-color: $colorTwo;
+  transition: all 1s;
+}
+.contact-slide:hover {
+  box-shadow: 0px 0px 60px rgb(39, 39, 39);
+}
+
+.contact h5,
+.contact-slide h5 {
+  transform: rotate(-90deg);
+  font-size: 2em;
+  margin-left: -1em;
+  margin-top: -0;
+}

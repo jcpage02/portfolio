@@ -1,0 +1,38 @@
+@import "../Style.scss";
+
+.projects {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  height: 150%;
+  width: 7em;
+  transform: rotate(20deg);
+  background-color: $colorThree;
+  transition: all 1s;
+}
+.projects:hover {
+  box-shadow: 0px 0px 60px rgb(29, 29, 29);
+}
+.projects-slide {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  height: 150%;
+  width: 40em;
+  transform: rotate(20deg);
+  background-color: $colorThree;
+  transition: all 1s;
+}
+.projects-slide:hover {
+  box-shadow: 0px 0px 60px rgb(39, 39, 39);
+}
+
+.projects h5,
+.projects-slide h5 {
+  transform: rotate(-90deg);
+  font-size: 2em;
+  margin-left: -1em;
+  margin-top: -0;
+}
