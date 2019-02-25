@@ -1,4 +1,4 @@
-@import './Style.scss';
+@import "./Style.scss";
 
 .App {
   display: flex;
@@ -9,18 +9,23 @@
   background-color: $colorBg;
   overflow: hidden;
   font-family: $font;
+  letter-spacing: 0.05em;
 }
 .App h1 {
   position: absolute;
   top: 4em;
   left: 4em;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
 }
 .App img {
   position: absolute;
   top: 16em;
   left: 4em;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   font-family: $font;
   height: 20em;
+}
+
+html {
+  background-color: black;
 }

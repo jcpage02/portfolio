@@ -1,5 +1,8 @@
 @import "../Style.scss";
 
+.projects-none {
+    display: none;
+}
 .projects {
   display: flex;
   justify-content: flex-start;
@@ -14,6 +17,7 @@
 }
 .projects:hover {
   box-shadow: 0px 0px 60px rgb(29, 29, 29);
+  background-color: #52664b;
 }
 .projects-slide {
   display: flex;
@@ -30,11 +34,45 @@
   box-shadow: 0px 0px 60px rgb(39, 39, 39);
 }
 
-.projects h5,
-.projects-slide h5 {
+.projects > h5 {
   transform: rotate(-90deg);
   font-size: 2em;
   margin-left: -1em;
   margin-bottom: 0;
-  margin-top: -0;
+  margin-top: -.8em;
+  transition: all 1s;
+}
+.projects-slide > h5 {
+  transform: rotate(-90deg);
+  font-size: 2em;
+  margin-left: -0.5em;
+  margin-bottom: 0;
+  margin-top: -10em;
+  transition: all 1s;
+}
+
+.projects-more-none {
+  position: absolute;
+  left: 6em;
+  width: 30em;
+  margin-left: 4em;
+  transform: rotate(-20deg);
+  visibility: hidden;
+  transition: all 1s;
+}
+.projects-more {
+  position: absolute;
+  left: 6em;
+  width: 30em;
+  margin-left: -0em;
+  transform: rotate(-20deg);
+  transition: all 2s;
+}
+.projects-more-none button,
+.projects-more button {
+  border: none;
+  height: 2em;
+  background-color: $colorOne;
+  box-shadow: 1px 2px 5px $colorBg;
+  border-radius: 2px;
 }
