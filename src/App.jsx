@@ -44,7 +44,9 @@ class App extends Component {
     this.setState({ windowView: prop });
   };
   toggleViewBack = () => {
-    this.setState({ windowView: '' });
+    if (this.state.windowView !== "") {
+      this.setState({ windowView: "" });
+    }
   };
 
   render() {

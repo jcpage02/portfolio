@@ -68,6 +68,60 @@
   transform: rotate(-20deg);
   transition: all 2s;
 }
+
+.skills-icon-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 25em;
+  height: 15em;
+  // background-color: rgb(166, 180, 166);
+  margin-bottom: 1.5em;
+}
+.skills-icon1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5em;
+  height: 5em;
+  margin: 1em;
+  border-radius: 50%;
+  background-color: $colorFour;
+}
+.skills-icon1 img {
+  width: 8.3em;
+}
+.skills-icon2 {
+  @extend .skills-icon1;
+}
+.skills-icon2 img {
+  width: 5.1em;
+}
+.skills-icon3 {
+  @extend .skills-icon1;
+}
+.skills-icon3 img {
+  width: 6.5em;
+}
+.skills-icon4 {
+  @extend .skills-icon1;
+}
+.skills-icon4 img {
+  width: 5.4em;
+}
+.skills-icon5 {
+  @extend .skills-icon1;
+}
+.skills-icon5 img {
+  width: 4em;
+  margin-bottom: .4em;
+}
+.skills-icon6 {
+  @extend .skills-icon1;
+}
+.skills-icon6 img {
+  width: 6.4em;
+}
 .skills-more-none button,
 .skills-more button {
   border: none;

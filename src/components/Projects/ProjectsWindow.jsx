@@ -1,14 +1,14 @@
 import React, { Component } from "react";
-import "./AboutWindow.scss";
+import "./ProjectsWindow.scss";
 
-export default class AboutWindow extends Component {
+export default class ProjectsWindow extends Component {
   state = {};
   render() {
     const { toggleView } = this.props;
     return (
-      <div className="window-about">
+      <div className="window-projects">
         <i className="fas fa-arrow-up" onClick={() => toggleView()} />
-        <h1>About</h1>
+        <h1>Projects</h1>
       </div>
     );
   }

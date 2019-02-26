@@ -1,0 +1,15 @@
+@import "../../Style.scss";
+
+.window-about {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+.window-about i {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    font-size: 2em;
+    color: $colorThree;
+}
