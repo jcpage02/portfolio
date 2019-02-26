@@ -4,7 +4,7 @@ import "./Skills.scss";
 export default class Skills extends Component {
   state = {};
   render() {
-    const { toggleSkillsSlide, mounted } = this.props.appState;
+    const { toggleSkillsSlide } = this.props.appState;
     const skillsSlide =
       toggleSkillsSlide === ""
         ? "skills-none"
@@ -27,7 +27,7 @@ export default class Skills extends Component {
             something new. I also enjoy finding the best way to solve problems.
             I am organized and pay close attention to details.
           </p>
-          <button>Learn More</button>
+          <button onClick={() => this.props.toggleView('skills')}>Learn More</button>
         </div>
       </div>
     );
