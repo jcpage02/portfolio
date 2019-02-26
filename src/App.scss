@@ -11,21 +11,26 @@
   font-family: $font;
   letter-spacing: 0.05em;
 }
-.App h1 {
+.app-home {
   position: absolute;
-  top: 4em;
-  left: 4em;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  min-width: 30em;
+  height: 100vh;
+  // background-color: $colorFour;
+}
+.app-home-text h1 {
+  margin-top: 2em;
   letter-spacing: 0.05em;
 }
-.App img {
-  position: absolute;
-  top: 16em;
-  left: 4em;
-  letter-spacing: 0.05em;
-  font-family: $font;
-  height: 20em;
+.app-home-text p {
+  font-size: 2em;
+}
+.app-home img {
+  width: 40em;
 }
 
-html {
-  background-color: black;
-}
+

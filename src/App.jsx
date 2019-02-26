@@ -41,12 +41,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>
-          Hi!
-          <br />
-          I'm James
-        </h1>
-        <img src={me} alt="" />
+        <div className="app-home">
+          <div className='app-home-text'>
+            <h1>Hello, My name is James</h1>
+            <p>I'm a full-stack developer.</p>
+          </div>
+          {/* <img src={me} alt="me" /> */}
+        </div>
         <About appState={this.state} toggleState={this.toggleState} />
         <Skills appState={this.state} toggleState={this.toggleState} />
         <Projects appState={this.state} toggleState={this.toggleState} />

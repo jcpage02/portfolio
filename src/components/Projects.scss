@@ -45,7 +45,7 @@
 .projects-slide > h5 {
   transform: rotate(-90deg);
   font-size: 2em;
-  margin-left: -0.5em;
+  margin-left: -1em;
   margin-bottom: 0;
   margin-top: -10em;
   transition: all 1s;
@@ -72,7 +72,8 @@
 .projects-more button {
   border: none;
   height: 2em;
-  background-color: $colorOne;
-  box-shadow: 1px 2px 5px $colorBg;
+  background-color: $colorFour;
+  color: $colorOne;
+  box-shadow: 1px 2px 5px rgb(73, 73, 73);
   border-radius: 2px;
 }

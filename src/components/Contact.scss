@@ -46,7 +46,7 @@
 .contact-slide > h5 {
   transform: rotate(-90deg);
   font-size: 2em;
-  margin-left: 0;
+  margin-left: -1em;
   margin-bottom: 0;
   margin-top: -7em;
   transition: all 1s;
@@ -67,14 +67,14 @@
   width: 30em;
   margin-left: -0em;
   transform: rotate(-20deg);
+  color: $colorOne;
   transition: all 2s;
 }
 .contact-more-none button,
 .contact-more button {
   border: none;
   height: 2em;
-  background-color: $colorThree;
-  color: white;
-  box-shadow: 1px 2px 5px $colorBg;
+  background-color: $colorOne;
+  box-shadow: 1px 2px 5px rgb(43, 42, 42);
   border-radius: 2px;
 }
