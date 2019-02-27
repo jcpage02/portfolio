@@ -22,14 +22,14 @@ export default class Contact extends Component {
       >
         <h5>CONTACT</h5>
         <div className={contactMore}>
-          <h3>Hi, my name is James Page</h3>
-          <p>
-            I am currently transitioning into a career in full stack software
-            engineering. I have always been fascinated with designing and create
-            something new. I also enjoy finding the best way to solve problems.
-            I am organized and pay close attention to details.
-          </p>
-          <button onClick={() => this.props.toggleView('contact')}>Learn More</button>
+          <h3>Enter your information below to get in touch!</h3>
+          <div className='contact-form'>
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Last Name" />
+            <input type="text" placeholder="Email Address" />
+            <textarea type="text" placeholder="Messge" />
+            <button>Send</button>
+          </div>
         </div>
       </div>
     );

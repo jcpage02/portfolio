@@ -3,13 +3,37 @@
 .window-about {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     width: 100vw;
     height: 100vh;
 }
 .window-about i {
     position: absolute;
+    display: flex;
+    justify-content: center;
     top: 1em;
     left: 1em;
     font-size: 2em;
     color: $colorThree;
+}
+.about-header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2em;
+    color: $colorFour;
+}
+.about-me-details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    width: 60em;
+    height: 40em;
+    border: 1px solid black;
+}
+.about-me-details img {
+    height: 30em;
+}
+.about-me-info {
+    width: 60%;
 }

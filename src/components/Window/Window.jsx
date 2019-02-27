@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import AboutWindow from "../About/AboutWindow";
-import ContactWindow from "../Contact/ContactWindow";
 import ProjectsWindow from "../Projects/ProjectsWindow";
 import SkillsWindow from "../Skills/SkillsWindow";
 import Skills from "../Skills/Skills";
@@ -13,8 +12,6 @@ export default class Window extends Component {
     const windowToView =
       windowView === "about" ? (
         <AboutWindow toggleView={toggleView} />
-      ) : windowView === "contact" ? (
-        <ContactWindow toggleView={toggleView} />
       ) : windowView === "projects" ? (
         <ProjectsWindow toggleView={toggleView} />
       ) : windowView === "skills" ? (

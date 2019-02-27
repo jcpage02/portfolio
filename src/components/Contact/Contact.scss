@@ -78,3 +78,24 @@
   box-shadow: 1px 2px 5px rgb(43, 42, 42);
   border-radius: 2px;
 }
+
+.contact-form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contact-form input{
+  height: 1.8em;
+  width: 14em;
+  margin: .4em;
+}
+.contact-form textarea{
+  height: 4em;
+  width: 24em;
+  margin: .4em;
+}
+.contact-form button {
+  margin-left: 1em;
+  margin-bottom: .2em;
+}
