@@ -22,14 +22,17 @@ export default class Projects extends Component {
       >
         <h5>PROJECTS</h5>
         <div className={projectsMore}>
-          <h3>Hi, my name is James Page</h3>
           <p>
-            I am currently transitioning into a career in full stack software
-            engineering. I have always been fascinated with designing and create
-            something new. I also enjoy finding the best way to solve problems.
-            I am organized and pay close attention to details.
+            One of my favorite things about being a developer is the
+            never-ending opportunities to create something new that will
+            directly influence people, whether at work or in their personal
+            lives. I get to constantly learn new ways to improve the way people
+            use technology. It is a fast paced environment, and I thrive off of
+            the constant flow of challenges that come each day.
           </p>
-          <button onClick={() => this.props.toggleView('projects')}>Learn More</button>
+          <button onClick={() => this.props.toggleView("projects")}>
+            See My Projects!
+          </button>
         </div>
       </div>
     );

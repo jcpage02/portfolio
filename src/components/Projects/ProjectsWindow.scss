@@ -11,3 +11,27 @@
     font-size: 2em;
     color: $colorThree;
 }
+.projects-main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.projects-main h1 {
+    position: relative;
+    font-size: 3em;
+    color: $colorFour;
+    height: 1.3em;
+    letter-spacing: .1em;
+    padding-bottom: .2em;
+    z-index: 1;
+}
+.projects-main h1::after {
+    position: absolute;
+    content: '';
+    height: .3em;
+    width: 50%; 
+    left: 25%;
+    bottom: 0;
+    border-bottom: 5px solid $colorThree;
+}

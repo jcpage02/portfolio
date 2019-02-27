@@ -53,8 +53,9 @@
 
 .skills-more-none {
   position: absolute;
-  left: 6em;
-  width: 30em;
+  left: 9em;
+  width: 26em;
+  margin-top: 3em;
   margin-left: 4em;
   transform: rotate(-20deg);
   visibility: hidden;
@@ -62,9 +63,10 @@
 }
 .skills-more {
   position: absolute;
-  left: 6em;
-  width: 30em;
+  left: 9em;
+  width: 26em;
   margin-left: -0em;
+  margin-top: 3em;
   transform: rotate(-20deg);
   transition: all 2s;
 }

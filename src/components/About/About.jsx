@@ -22,7 +22,7 @@ export default class About extends Component {
         <div className={aboutMore}>
           <h3>Hi, my name is James Page</h3>
           <p>
-            I am currently transitioning into a career in full stack software
+            I am currently transitioning into a career in full-stack software
             engineering. I have always been fascinated with designing and create
             something new. I also enjoy finding the best way to solve problems.
             I am organized and pay close attention to details.

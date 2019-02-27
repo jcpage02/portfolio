@@ -8,7 +8,9 @@ export default class ProjectsWindow extends Component {
     return (
       <div className="window-projects">
         <i className="fas fa-arrow-up" onClick={() => toggleView()} />
-        <h1>Projects</h1>
+        <div className='projects-main'>
+          <h1>PROJECTS</h1>
+        </div>
       </div>
     );
   }
