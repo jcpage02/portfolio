@@ -81,6 +81,7 @@
   margin-bottom: 1.5em;
 }
 .skills-icon1 {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,6 +93,10 @@
 }
 .skills-icon1 img {
   width: 8.3em;
+}
+.skills-icon1 span {
+  position: absolute;
+  top: 5em;
 }
 .skills-icon2 {
   @extend .skills-icon1;
@@ -116,7 +121,7 @@
 }
 .skills-icon5 img {
   width: 4em;
-  margin-bottom: .4em;
+  margin-bottom: 0.4em;
 }
 .skills-icon6 {
   @extend .skills-icon1;
@@ -124,12 +129,18 @@
 .skills-icon6 img {
   width: 6.4em;
 }
+.skills-icon7 {
+  @extend .skills-icon1;
+}
+.skills-icon7 img {
+  width: 6.6em;
+}
 .skills-more-none button,
 .skills-more button {
   border: none;
   height: 2em;
-  background-color: $colorThree;
-  color: white;
+  background-color: $colorFour;
+  color: $colorOne;
   box-shadow: 1px 2px 5px rgb(134, 134, 134);
   border-radius: 2px;
 }

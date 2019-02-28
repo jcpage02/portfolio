@@ -280,13 +280,18 @@ export default class ProjectsWindow extends Component {
             </div>
             <div className="projects-project-details">
               <p>
-                Group developed web app that allows users to create an account,
-                connect with friends, start and joing social book clubs, and
-                instantly chat with other users. - Built using React, Node,
-                Express, Massive, PostgreSQL.
+                Group developed social book club web app that provides a way for
+                the user to connect with friends, add book titles to their
+                personal library, and create "book clubs" for them and their
+                friends. The user is able to chat with individual friends as
+                well as the people in a book club about the books they are
+                reading. Built using React, Node, Express, Massive, PostgreSQL,
+                Bcrypt.js, Socket.io.
+                <p>APIs - NY Times Best Sellers and Google Books.</p>
+                <p>Learned Socket.io.</p>
                 <p>
                   <a href="https://finerthings.jamesc.page">
-                    finerthings.jamesc.page ( /customer/dash & /admin/dash )
+                    finerthings.jamesc.page
                   </a>
                 </p>
                 <p>

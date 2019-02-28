@@ -33,7 +33,7 @@ class App extends Component {
         toggleProjectsExpand: false,
         toggleSkillsExpand: false
       });
-    }, 500);
+    }, 200);
   }
 
   toggleState = prop => {

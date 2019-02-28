@@ -27,7 +27,7 @@ export default class About extends Component {
             something new. I also enjoy finding the best way to solve problems.
             I am organized and pay close attention to details.
           </p>
-          <button onClick={() => this.props.toggleView('about')}>Learn More</button>
+          {/* <button onClick={() => this.props.toggleView('about')}>Learn More</button> */}
         </div>
       </div>
     );

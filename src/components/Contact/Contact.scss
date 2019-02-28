@@ -54,21 +54,34 @@
 
 .contact-more-none {
   position: absolute;
-  left: 6em;
+  left: 9em;
+  bottom: 20em;
   width: 30em;
   margin-left: 20em;
   transform: rotate(-20deg);
+  color: $colorOne;
   visibility: hidden;
   transition: all 1s;
 }
+.contact-more-none h4 {
+  margin-bottom: .4em;
+}
+.contact-more-none a {
+  text-decoration: none;
+  color: $colorOne;
+}
 .contact-more {
   position: absolute;
-  left: 6em;
+  left: 9em;
+  bottom: 22em;
   width: 30em;
   margin-left: -0em;
   transform: rotate(-20deg);
   color: $colorOne;
   transition: all 2s;
+}
+.contact-more h4 {
+  margin-bottom: .4em;
 }
 .contact-more-none button,
 .contact-more button {
@@ -89,13 +102,19 @@
   height: 1.8em;
   width: 14em;
   margin: .4em;
+  border: none;
 }
 .contact-form textarea{
   height: 4em;
   width: 24em;
   margin: .4em;
+  border: none;
 }
 .contact-form button {
   margin-left: 1em;
   margin-bottom: .2em;
+}
+.contact-more a {
+  text-decoration: none;
+  color: $colorOne;
 }
