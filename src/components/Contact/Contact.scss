@@ -118,3 +118,27 @@
   text-decoration: none;
   color: $colorOne;
 }
+
+@media(max-width: 1200px) {
+  .contact {
+    margin-top: 37em;
+    margin-right: -5em;
+    width: 14em;
+    transform: rotate(45deg)
+  }
+  .contact-slide {
+    margin-top: 10em;
+    margin-right: -12em;
+    height: 200%;
+    width: 51em;
+    transform: rotate(45deg);
+  }
+  .contact-more-none {
+    transform: rotate(-45deg)
+  }
+  .contact-more {
+    margin-bottom: 14em;
+    margin-left: -2em;
+    transform: rotate(-45deg)
+  }
+}

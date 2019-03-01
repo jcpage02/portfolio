@@ -144,3 +144,26 @@
   box-shadow: 1px 2px 5px rgb(134, 134, 134);
   border-radius: 2px;
 }
+
+@media (max-width: 1200px) {
+  .skills {
+    margin-top: 22.7em;
+    margin-right: -1.6em;
+    width: 5em;
+    transform: rotate(45deg);
+  }
+  .skills-slide {
+    margin-top: 3.2em;
+    margin-right: -5em;
+    height: 200%;
+    width: 35em;
+    transform: rotate(45deg);
+  }
+  .skills-more-none {
+    transform: rotate(-45deg);
+  }
+  .skills-more {
+    left: 6em;
+    transform: rotate(-45deg);
+  }
+}

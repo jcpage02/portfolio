@@ -1,7 +1,7 @@
 @import "../../Style.scss";
 
 .projects-none {
-    display: none;
+  display: none;
 }
 .projects {
   display: flex;
@@ -39,7 +39,7 @@
   font-size: 2em;
   margin-left: -1em;
   margin-bottom: 0;
-  margin-top: -.8em;
+  margin-top: -0.8em;
   transition: all 1s;
 }
 .projects-slide > h5 {
@@ -79,4 +79,27 @@
   color: $colorOne;
   box-shadow: 1px 2px 5px rgb(73, 73, 73);
   border-radius: 2px;
+}
+
+@media (max-width: 1200px) {
+  .projects {
+    margin-top: 29.9em;
+    margin-right: .4em;
+    width: 5em;
+    transform: rotate(45deg);
+  }
+  .projects-slide {
+    margin-top: 8em;
+    margin-right: -4.4em;
+    height: 200%;
+    width: 35em;
+    transform: rotate(45deg);
+  }
+  .projects-more-none {
+    transform: rotate(-45deg)
+  }
+  .projects-more {
+    left: 3.5em;
+    transform: rotate(-45deg)
+  }
 }
