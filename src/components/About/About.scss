@@ -77,25 +77,30 @@
   border-radius: 2px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .about {
-    margin-top: 15.4em;
-    margin-right: -1.6em;
-    width: 5em;
-    transform: rotate(45deg);
+    justify-content: flex-start;
+    height: 150%;
+    width: 4em;
+    margin-right: 0.2em;
   }
   .about-slide {
-    margin-top: -5.1em;
-    margin-right: -6em;
-    height: 200%;
-    width: 35em;
-    transform: rotate(45deg);
+    height: 150%;
+    width: 40em;
   }
-  .about-more-none {
-    transform: rotate(-45deg)
+  .about h5 {
+    margin-left: -.7em;
+    margin-top: 1.4em;
+    transition: all 1s;
   }
-  .about-more {
-    left: 3.5em;
-    transform: rotate(-45deg)
+  .about-slide > h5 {
+    margin-left: -.7em;
+    margin-top: -10em;
+    transition: all 1s;
   }
+  // .about-more-none {
+  // }
+  // .about-more {
+  //   left: 3.5em;
+  // }
 }

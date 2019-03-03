@@ -1,7 +1,7 @@
 @import "../../Style.scss";
 
 .contact-none {
-    display: none;
+  display: none;
 }
 .contact {
   display: flex;
@@ -64,7 +64,7 @@
   transition: all 1s;
 }
 .contact-more-none h4 {
-  margin-bottom: .4em;
+  margin-bottom: 0.4em;
 }
 .contact-more-none a {
   text-decoration: none;
@@ -81,7 +81,7 @@
   transition: all 2s;
 }
 .contact-more h4 {
-  margin-bottom: .4em;
+  margin-bottom: 0.4em;
 }
 .contact-more-none button,
 .contact-more button {
@@ -98,47 +98,46 @@
   align-items: center;
   flex-wrap: wrap;
 }
-.contact-form input{
+.contact-form input {
   height: 1.8em;
   width: 14em;
-  margin: .4em;
+  margin: 0.4em;
   border: none;
 }
-.contact-form textarea{
+.contact-form textarea {
   height: 4em;
   width: 24em;
-  margin: .4em;
+  margin: 0.4em;
   border: none;
 }
 .contact-form button {
   margin-left: 1em;
-  margin-bottom: .2em;
+  margin-bottom: 0.2em;
 }
 .contact-more a {
   text-decoration: none;
   color: $colorOne;
 }
 
-@media(max-width: 1200px) {
+@media (max-width: 1300px) {
   .contact {
-    margin-top: 37em;
-    margin-right: -5em;
-    width: 14em;
-    transform: rotate(45deg)
+    height: 150%;
+    width: 30em;
+    margin-right: -18em;
   }
   .contact-slide {
-    margin-top: 10em;
-    margin-right: -12em;
-    height: 200%;
-    width: 51em;
-    transform: rotate(45deg);
+    height: 150%;
+    width: 50em;
+    margin-right: -10em;
   }
-  .contact-more-none {
-    transform: rotate(-45deg)
+  .contact h5 {
+    margin-left: -1.4em;
+    margin-top: 4.8em;
   }
-  .contact-more {
-    margin-bottom: 14em;
-    margin-left: -2em;
-    transform: rotate(-45deg)
-  }
+  // .contact-more-none {
+  // }
+  // .contact-more {
+  //   margin-bottom: 14em;
+  //   margin-left: -2em;
+  // }
 }

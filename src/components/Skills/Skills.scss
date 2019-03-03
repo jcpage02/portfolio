@@ -145,25 +145,28 @@
   border-radius: 2px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .skills {
-    margin-top: 22.7em;
-    margin-right: -1.6em;
-    width: 5em;
-    transform: rotate(45deg);
+    height: 150%;
+    width: 4em;
+    margin-right: 0.2em;
   }
   .skills-slide {
-    margin-top: 3.2em;
-    margin-right: -5em;
-    height: 200%;
-    width: 35em;
-    transform: rotate(45deg);
+    height: 150%;
+    width: 40em;
   }
-  .skills-more-none {
-    transform: rotate(-45deg);
+  .skills h5 {
+    margin-left: -.5em;
+    margin-top: 2em;
   }
+  .skills-slide > h5 {
+    margin-left: -.5em;
+    margin-top: -10em;
+  }
+  // .skills-more-none {
+  // }
   .skills-more {
-    left: 6em;
-    transform: rotate(-45deg);
+    margin-top: 2em;
+    left: 8em;
   }
 }
