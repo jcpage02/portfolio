@@ -81,3 +81,9 @@
   top: 0;
   transition: all 1s;
 }
+
+@media (max-width: 1000px) {
+  .app-home-text {
+    margin-right: 4.5em;
+  }
+}
