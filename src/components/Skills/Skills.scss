@@ -163,10 +163,32 @@
     margin-left: -.5em;
     margin-top: -10em;
   }
-  // .skills-more-none {
-  // }
   .skills-more {
     margin-top: 2em;
     left: 8em;
+  }
+}
+
+@media (max-width: 900px) {
+  .skills {
+    justify-content: center;
+    height: 3em;
+    width: 100%;
+    margin: 0;
+    transform: rotate(0deg);
+  }
+  .skills-slide {
+    height: 150%;
+    width: 40em;
+  }
+  .skills h5 {
+    transform: rotate(0deg);
+    font-size: 1.5em;    
+    margin: 0;
+  }
+  .skills-slide > h5 {
+    margin-left: -0.7em;
+    margin-top: -10em;
+    transition: all 1s;
   }
 }

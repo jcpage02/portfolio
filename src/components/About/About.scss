@@ -88,19 +88,38 @@
     height: 150%;
     width: 40em;
   }
-  .about h5 {
-    margin-left: -.7em;
+  .about > h5 {
+    margin-left: -0.7em;
     margin-top: 1.4em;
     transition: all 1s;
   }
   .about-slide > h5 {
-    margin-left: -.7em;
+    margin-left: -0.7em;
     margin-top: -10em;
     transition: all 1s;
   }
-  // .about-more-none {
-  // }
-  // .about-more {
-  //   left: 3.5em;
-  // }
+}
+
+@media (max-width: 900px) {
+  .about {
+    justify-content: center;
+    height: 3em;
+    width: 100%;
+    margin: 0;
+    transform: rotate(0deg);
+  }
+  .about-slide {
+    height: 150%;
+    width: 40em;
+  }
+  .about h5 {
+    transform: rotate(0deg);
+    font-size: 1.5em;    
+    margin: 0;
+  }
+  .about-slide > h5 {
+    margin-left: -0.7em;
+    margin-top: -10em;
+    transition: all 1s;
+  }
 }
