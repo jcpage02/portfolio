@@ -11,6 +11,7 @@
   height: 150%;
   width: 70em;
   margin-right: -48em;
+  margin-left: 1.3em;
   transform: rotate(20deg);
   background-color: $colorFour;
   transition: all 1s;
@@ -38,9 +39,8 @@
 .contact > h5 {
   transform: rotate(-90deg);
   font-size: 2em;
-  margin-left: -1em;
-  margin-bottom: 0;
-  margin-top: 3.7em;
+  margin-left: -0.7em;
+  margin-top: 10.8em;
   transition: all 1s;
 }
 .contact-slide > h5 {
@@ -118,8 +118,9 @@
 @media (max-width: 1300px) {
   .contact {
     height: 150%;
-    width: 26.8em;
-    margin-right: -18em;
+    width: 50em;
+    margin-right: -40em;
+    margin-left: .8em;
   }
   .contact-slide {
     height: 150%;
@@ -128,19 +129,22 @@
   }
   .contact h5 {
     margin-left: -1.4em;
-    margin-top: 4.8em;
+    margin-bottom: 4em;
   }
   .contact-more-none {
+    margin-bottom: 8em;
+    margin-left: 10em;
   }
   .contact-more {
-    margin-bottom: 8em;
+    margin-bottom: 6em;
     margin-left: 0em;
   }
 }
 @media (max-width: 900px) {
   .contact {
+    position: relative;
     justify-content: center;
-    height: 3em;
+    height: 5em;
     width: 100%;
     margin: 0;
     transform: rotate(0deg);
@@ -154,31 +158,31 @@
   }
   .contact h5 {
     position: absolute;
-    top: .3em;
-    font-size: 1.5em;    
+    top: 0.3em;
+    font-size: 1.5em;
     margin: 0;
     transform: rotate(0deg);
   }
   .contact-slide > h5 {
     position: absolute;
-    top: .3em;
-    font-size: 1.5em;    
+    top: 0.3em;
+    font-size: 1.5em;
     margin: 0;
     transform: rotate(0deg);
     transition: all 1s;
   }
   .contact-more {
-    left: auto;
-    // margin-top: -2em;
+    position: absolute;
+    top: 6em;
     margin: 0;
     width: 25em;
     transform: rotate(0deg);
   }
   .contact-more-none {
-    left: auto;
+    position: absolute;
+    top: 10em;
+    margin: 0;
     width: 25em;
-    margin-left: 0;
-    // margin-top: 15em;
     transform: rotate(0deg);
   }
 }

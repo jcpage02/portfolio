@@ -52,7 +52,6 @@
   height: 600px;
   margin: 0 4em 4em 4em;
   padding: 1em;
-  //   border: 1px solid black;
 }
 .projects-project h2 {
   text-align: center;
@@ -107,4 +106,27 @@
 .projects-project-details a {
     text-decoration: none;
     color: $colorOne;
+}
+
+@media (max-width: 1125px) {
+  .projects-project {
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+    height: 1000px;
+  }
+  .projects-project-images {
+    width: 85%;
+    height: 75%;
+  }
+  .projects-project-details {
+    align-items: flex-start;
+    width: 100%;
+    height: 25%;
+    padding: 0 10em;
+  }
+}
+
+@media (max-width: 900px) {
+
 }
