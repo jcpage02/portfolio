@@ -9,8 +9,8 @@
   align-items: center;
   box-sizing: border-box;
   height: 150%;
-  width: 30em;
-  margin-right: -12em;
+  width: 70em;
+  margin-right: -48em;
   transform: rotate(20deg);
   background-color: $colorFour;
   transition: all 1s;
@@ -51,12 +51,10 @@
   margin-top: -7em;
   transition: all 1s;
 }
-
 .contact-more-none {
-  position: absolute;
-  left: 9em;
-  bottom: 20em;
+  margin-top: 16em;
   width: 30em;
+  height: 18em;
   margin-left: 20em;
   transform: rotate(-20deg);
   color: $colorOne;
@@ -71,11 +69,9 @@
   color: $colorOne;
 }
 .contact-more {
-  position: absolute;
-  left: 9em;
-  bottom: 22em;
+  margin-top: 16em;
+  margin-left: 1em;
   width: 30em;
-  margin-left: -0em;
   transform: rotate(-20deg);
   color: $colorOne;
   transition: all 2s;
@@ -150,17 +146,39 @@
     transform: rotate(0deg);
   }
   .contact-slide {
-    height: 150%;
-    width: 40em;
+    justify-content: center;
+    height: 35em;
+    width: 100%;
+    margin: 0;
+    transform: rotate(0deg);
   }
   .contact h5 {
-    transform: rotate(0deg);
+    position: absolute;
+    top: .3em;
     font-size: 1.5em;    
     margin: 0;
+    transform: rotate(0deg);
   }
   .contact-slide > h5 {
-    margin-left: -0.7em;
-    margin-top: -10em;
+    position: absolute;
+    top: .3em;
+    font-size: 1.5em;    
+    margin: 0;
+    transform: rotate(0deg);
     transition: all 1s;
+  }
+  .contact-more {
+    left: auto;
+    // margin-top: -2em;
+    margin: 0;
+    width: 25em;
+    transform: rotate(0deg);
+  }
+  .contact-more-none {
+    left: auto;
+    width: 25em;
+    margin-left: 0;
+    // margin-top: 15em;
+    transform: rotate(0deg);
   }
 }

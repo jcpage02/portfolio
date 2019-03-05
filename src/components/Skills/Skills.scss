@@ -178,17 +178,40 @@
     transform: rotate(0deg);
   }
   .skills-slide {
-    height: 150%;
-    width: 40em;
-  }
-  .skills h5 {
+    justify-content: center;
+    height: 35em;
+    width: 100%;
+    margin: 0;
     transform: rotate(0deg);
+  }
+  .skills > h5 {
+    position: absolute;
+    top: .3em;
     font-size: 1.5em;    
     margin: 0;
+    transform: rotate(0deg);
   }
   .skills-slide > h5 {
-    margin-left: -0.7em;
-    margin-top: -10em;
-    transition: all 1s;
+    position: absolute;
+    top: .3em;
+    font-size: 1.5em;    
+    margin: 0;
+    transform: rotate(0deg);
+  }
+  .skills-more > h3 {
+    padding-left: 1em;
+  }
+  .skills-more {
+    left: auto;
+    margin-top: -2em;
+    width: 25em;
+    transform: rotate(0deg);
+  }
+  .skills-more-none {
+    left: auto;
+    width: 25em;
+    margin-left: 0;
+    margin-top: 15em;
+    transform: rotate(0deg);
   }
 }

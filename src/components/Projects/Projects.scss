@@ -110,17 +110,38 @@
     transform: rotate(0deg);
   }
   .projects-slide {
-    height: 150%;
-    width: 40em;
-  }
-  .projects h5 {
+    justify-content: center;
+    height: 35em;
+    width: 100%;
+    margin: 0;
     transform: rotate(0deg);
+  }
+  .projects > h5 {
+    position: absolute;
+    top: .3em;
     font-size: 1.5em;    
     margin: 0;
+    transform: rotate(0deg);
   }
   .projects-slide > h5 {
-    margin-left: -0.7em;
-    margin-top: -10em;
+    position: absolute;
+    top: .3em;
+    font-size: 1.5em;    
+    margin: 0;
+    transform: rotate(0deg);
     transition: all 1s;
+  }
+  .projects-more {
+    left: auto;
+    margin-top: -2em;
+    width: 25em;
+    transform: rotate(0deg);
+  }
+  .projects-more-none {
+    left: auto;
+    width: 25em;
+    margin-left: 0;
+    margin-top: 15em;
+    transform: rotate(0deg);
   }
 }

@@ -109,17 +109,36 @@
     transform: rotate(0deg);
   }
   .about-slide {
-    height: 150%;
-    width: 40em;
-  }
-  .about h5 {
+    justify-content: center;
+    height: 35em;
+    width: 100%;
+    margin: 0;
     transform: rotate(0deg);
+  }
+  .about > h5 {
+    position: absolute;
+    top: .3em;
     font-size: 1.5em;    
     margin: 0;
+    transform: rotate(0deg);
   }
   .about-slide > h5 {
-    margin-left: -0.7em;
-    margin-top: -10em;
-    transition: all 1s;
+    position: absolute;
+    top: .3em;
+    font-size: 1.5em;    
+    margin: 0;
+    transform: rotate(0deg);
+  }
+  .about-more {
+    transform: rotate(0deg);
+    left: auto;
+    width: 25em;
+  }
+  .about-more-none {
+    transform: rotate(0deg);
+    left: auto;
+    width: 25em;
+    margin-left: 0;
+    margin-top: 10em;
   }
 }
