@@ -19,10 +19,15 @@ import finerFriends from "../../images/finerThings/TheFinerThings-friends.png";
 import finerFriendsChat from "../../images/finerThings/TheFinerThings-friends-chat.png";
 import finerResponsive from "../../images/finerThings/TheFinerThings-responsive.png";
 
+import ksWigHome1 from "../../images/ksWigShop/ksWigShop-home1.png";
+import ksWigHome2 from "../../images/ksWigShop/ksWigShop-home2.png";
+import ksWigHome3 from "../../images/ksWigShop/ksWigShop-home3.png";
+
 export default class ProjectsWindow extends Component {
   state = {
     projOneImage: "home",
-    projTwoImage: "finerHome"
+    projTwoImage: "finerHome",
+    projThreeImage: "ksWigHome1"
   };
 
   handleChangeImage = (prop1, prop2) => {
@@ -33,7 +38,7 @@ export default class ProjectsWindow extends Component {
 
   render() {
     const { toggleView } = this.props;
-    const { projOneImage, projTwoImage } = this.state;
+    const { projOneImage, projTwoImage, projThreeImage } = this.state;
 
     const projOneMain =
       projOneImage === "home" ? (
@@ -109,6 +114,21 @@ export default class ProjectsWindow extends Component {
         </div>
       ) : null;
 
+    const projThreeMain =
+      projThreeImage === "ksWigHome1" ? (
+        <div className="projects-project-main-image">
+          <img src={ksWigHome1} alt="" />
+        </div>
+      ) : projThreeImage === "ksWigHome2" ? (
+        <div className="projects-project-main-image">
+          <img src={ksWigHome2} alt="" />
+        </div>
+      ) : projThreeImage === "ksWigHome3" ? (
+        <div className="projects-project-main-image">
+          <img src={ksWigHome3} alt="" />
+        </div>
+      ) : null;
+
     return (
       <div className="window-projects">
         <i className="fas fa-arrow-up" onClick={() => toggleView()} />
@@ -116,9 +136,129 @@ export default class ProjectsWindow extends Component {
           <div className="projects-header">
             <h1>PROJECTS</h1>
           </div>
+          {/* ///////////////////////////////////////////////////////////////////////////////////////// */}
           <div className="projects-project">
             <h2>
-              <a href="https://www.libertyroofing.page">libertyroofing.page</a>
+              <a href="">K's Wig Shop</a>
+            </h2>
+            <div className="projects-project-images">
+              {projThreeMain}
+              <div className="projects-project-all-images">
+                <img
+                  src={ksWigHome1}
+                  alt=""
+                  onClick={() =>
+                    this.handleChangeImage("projThreeImage", "ksWigHome1")
+                  }
+                />
+                <img
+                  src={ksWigHome2}
+                  alt=""
+                  onClick={() =>
+                    this.handleChangeImage("projThreeImage", "ksWigHome2")
+                  }
+                />
+                <img
+                  src={ksWigHome3}
+                  alt=""
+                  onClick={() =>
+                    this.handleChangeImage("projThreeImage", "ksWigHome3")
+                  }
+                />
+              </div>
+            </div>
+            <div className="projects-project-details">
+              <p>
+                Under Construction
+                <p />
+                <p />
+                <p>
+                  <a href="">K's Wig Shop</a>
+                </p>
+                <p>
+                  <a href="https://github.com/jcpage02/ks-wig-shop">Github</a>
+                </p>
+              </p>
+            </div>
+          </div>
+          {/* ///////////////////////////////////////////////////////////////////////////////////////// */}
+          <div className="projects-project">
+            <h2>
+              <a href="https://finerthings.jamesc.page">The Finer Things</a>
+            </h2>
+            <div className="projects-project-images">
+              {projTwoMain}
+              <div className="projects-project-all-images">
+                <img
+                  src={finerHome}
+                  alt=""
+                  onClick={() =>
+                    this.handleChangeImage("projTwoImage", "finerHome")
+                  }
+                />
+                <img
+                  src={finerLibrary}
+                  alt=""
+                  onClick={() =>
+                    this.handleChangeImage("projTwoImage", "finerLibrary")
+                  }
+                />
+                <img
+                  src={finerBrowse}
+                  alt=""
+                  onClick={() =>
+                    this.handleChangeImage("projTwoImage", "finerBrowse")
+                  }
+                />
+                <img
+                  src={finerFriends}
+                  alt=""
+                  onClick={() =>
+                    this.handleChangeImage("projTwoImage", "finerFriends")
+                  }
+                />
+                <img
+                  src={finerFriendsChat}
+                  alt=""
+                  onClick={() =>
+                    this.handleChangeImage("projTwoImage", "finerFriendsChat")
+                  }
+                />
+                <img
+                  src={finerResponsive}
+                  alt=""
+                  onClick={() =>
+                    this.handleChangeImage("projTwoImage", "finerResponsive")
+                  }
+                />
+              </div>
+            </div>
+            <div className="projects-project-details">
+              <p>
+                Group developed social book club web app that provides a way for
+                the user to connect with friends, add book titles to their
+                personal library, and create "book clubs" for them and their
+                friends. The user is able to chat with individual friends as
+                well as the people in a book club about the books they are
+                reading. Built using React, Node, Express, Massive, PostgreSQL,
+                Bcrypt.js, Socket.io.
+                <p>APIs - NY Times Best Sellers and Google Books.</p>
+                <p>Learned Socket.io.</p>
+                <p>
+                  <a href="https://finerthings.jamesc.page">The Finer Things</a>
+                </p>
+                <p>
+                  <a href="https://github.com/finerpeople/finer-things">
+                    Github
+                  </a>
+                </p>
+              </p>
+            </div>
+          </div>
+          {/* ///////////////////////////////////////////////////////////////////////////////////////// */}
+          <div className="projects-project">
+            <h2>
+              <a href="https://www.libertyroofing.page">Liberty Roofing</a>
             </h2>
             <div className="projects-project-images">
               {projOneMain}
@@ -213,90 +353,13 @@ export default class ProjectsWindow extends Component {
                 Learned Stripe Checkout, Twilio, Nodemailer, SASS, and CSS Grid.
                 <p>
                   <a href="https://www.libertyroofing.page">
-                    www.libertyroofing.page ( /customer/dash & /admin/dash )
+                    Liberty Roofing ( other views: /customer/dash & /admin/dash
+                    )
                   </a>
                 </p>
                 <p>
                   <a href="https://github.com/jcpage02/liberty-roofing-pp">
-                    https://github.com/jcpage02/liberty-roofing-pp
-                  </a>
-                </p>
-              </p>
-            </div>
-          </div>
-          {/* ///////////////////////////////////////////////////////////////////////////////////////// */}
-          <div className="projects-project">
-            <h2>
-              <a href="https://finerthings.jamesc.page">
-                finerthings.jamesc.page
-              </a>
-            </h2>
-            <div className="projects-project-images">
-              {projTwoMain}
-              <div className="projects-project-all-images">
-                <img
-                  src={finerHome}
-                  alt=""
-                  onClick={() =>
-                    this.handleChangeImage("projTwoImage", "finerHome")
-                  }
-                />
-                <img
-                  src={finerLibrary}
-                  alt=""
-                  onClick={() =>
-                    this.handleChangeImage("projTwoImage", "finerLibrary")
-                  }
-                />
-                <img
-                  src={finerBrowse}
-                  alt=""
-                  onClick={() =>
-                    this.handleChangeImage("projTwoImage", "finerBrowse")
-                  }
-                />
-                <img
-                  src={finerFriends}
-                  alt=""
-                  onClick={() =>
-                    this.handleChangeImage("projTwoImage", "finerFriends")
-                  }
-                />
-                <img
-                  src={finerFriendsChat}
-                  alt=""
-                  onClick={() =>
-                    this.handleChangeImage("projTwoImage", "finerFriendsChat")
-                  }
-                />
-                <img
-                  src={finerResponsive}
-                  alt=""
-                  onClick={() =>
-                    this.handleChangeImage("projTwoImage", "finerResponsive")
-                  }
-                />
-              </div>
-            </div>
-            <div className="projects-project-details">
-              <p>
-                Group developed social book club web app that provides a way for
-                the user to connect with friends, add book titles to their
-                personal library, and create "book clubs" for them and their
-                friends. The user is able to chat with individual friends as
-                well as the people in a book club about the books they are
-                reading. Built using React, Node, Express, Massive, PostgreSQL,
-                Bcrypt.js, Socket.io.
-                <p>APIs - NY Times Best Sellers and Google Books.</p>
-                <p>Learned Socket.io.</p>
-                <p>
-                  <a href="https://finerthings.jamesc.page">
-                    finerthings.jamesc.page
-                  </a>
-                </p>
-                <p>
-                  <a href="https://github.com/finerpeople/finer-things">
-                    https://github.com/finerpeople/finer-things
+                    Github
                   </a>
                 </p>
               </p>

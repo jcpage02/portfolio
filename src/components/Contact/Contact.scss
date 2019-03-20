@@ -10,8 +10,9 @@
   box-sizing: border-box;
   height: 150%;
   width: 70em;
+  margin-top: 10em;
   margin-right: -48em;
-  margin-left: 1.3em;
+  margin-left: -.55em;
   transform: rotate(20deg);
   background-color: $colorFour;
   transition: all 1s;
@@ -40,7 +41,7 @@
   transform: rotate(-90deg);
   font-size: 2em;
   margin-left: -0.7em;
-  margin-top: 10.8em;
+  margin-top: 5.6em;
   transition: all 1s;
 }
 .contact-slide > h5 {
